@@ -7,7 +7,7 @@ import {HomePage} from '../home/home';
   templateUrl: 'signature.html',
 })
 export class SignaturePage {
-  @ViewChild(SignaturePad)public signaturePad : SignaturePad;
+  @ViewChild(SignaturePad) public signaturePad : SignaturePad;
 
   public signaturePadOptions : Object = {
     'minWidth': 2,
@@ -59,6 +59,8 @@ export class SignaturePage {
     this.signatureImage = this
       .signaturePad
       .toDataURL();
+    
+    console.log(this.signatureImage);
  
     this
       .navCtrl

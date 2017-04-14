@@ -13,8 +13,11 @@ export class HomePage {
   }
 
   openSignatureModel(){
-    let modal = this.modalController.create(SignaturePage);
+    setTimeout(() => {
+       let modal = this.modalController.create(SignaturePage);
     modal.present();
+    }, 300);
+  
   }
 
 }
